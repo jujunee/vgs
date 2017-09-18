@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+  <title>forgot password</title>
+  <link rel="stylesheet" href="./css/ps_style.css">
+  <link rel="stylesheet" href="./css/normalize.min.css">
+  <script type="text/javascript" src="./js/jquery-3.2.1.js"></script>
+  <script type="text/javascript" src="./js/jquery.easing.min.js"></script>
+</head>
+
+<body>
+  <!-- multistep form -->
+  <form id="msform">
+    <!-- progressbar -->
+    <ul id="progressbar">
+      <li class="active">選擇密碼類型</li>
+      <li>輸入認證碼</li>
+      <li>修改密碼</li>
+      <li>成功</li>
+    </ul>
+    <!-- fieldsets -->
+
+    <fieldset>
+      <h2 class="fs-title">忘記密碼</h2>
+      <select name="yourpassword">
+        <option value="choose">選擇密碼類型</option>
+        <option value="log_ps">登入密碼</option>
+        <option value="verifi_ps">認證密碼</option>
+      </select>
+      <br>
+      <br>
+      <input id="date" type="date">
+      <input type="account" name="login" placeholder="登入帳號" />
+      <input type="text" name="number" placeholder="已驗證手機號碼" />
+      <input type="button" name="next" class="next action-button" value="下一步" />
+    </fieldset>
+    <fieldset>
+      <h2 class="fs-title">忘記密碼</h2>
+      <h3 class="fs-subtitle">請輸入簡訊中的驗證碼</h3>
+      <input type="text" name="Verification" placeholder="輸入驗證碼" />
+      <h3 class="fs-subtitle">未收到簡訊？在次傳送驗證碼</h3>
+      <input type="button" name="next" class="next action-button" value="下一步" />
+    </fieldset>
+    <fieldset>
+      <h2 class="fs-title">忘記密碼</h2>
+      <h3 class="fs-subtitle">請輸入新密碼</h3>
+      <input type="password" name="pass" placeholder="新密碼" />
+      <input type="password" name="cpass" placeholder="再次輸入新密碼" />
+      <input type="button" name="next" class="next action-button" value="下一步" />
+    </fieldset>
+    <fieldset>
+      <h2 class="fs-title">忘記密碼</h2>
+      <h3 class="fs-subtitle">您的密碼已修改成功<br>請至登入畫面重新登入，謝謝！</h3>
+      <input type="submit" name="submit" class="submit action-button" value="確定" />
+    </fieldset>
+  </form>
+</body>
+<script src="./js/jquery.js"></script>
+<script>
+function myFunction() {
+    alert("資料未填寫完成");
+}
+</script>
+<script>
+function myFunction() {
+    alert("資料輸入錯誤，請重新輸入");
+}
+</script>
+<script>
+function myFunction() {
+    alert("資料輸入錯誤，請洽客服人員");
+}
+</script>
+</html>
